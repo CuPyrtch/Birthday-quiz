@@ -45,7 +45,8 @@ input4 = input("And the day? ")
 
 
 
-
+year = int(input3)
+day = int(input4)
 
 
 
