@@ -43,7 +43,8 @@ input2 = input("Hello " + input1 + ", what was the name of the month you were bo
 input3 = input("And what year were you born in, " + input1 + "? ")
 input4 = input("And the day? ")
 
-
+if int(input3) > 2000:
+    print(input1 + ", you are a" + " of the two thousands")
 
 year = int(input3)
 day = int(input4)
@@ -51,4 +52,4 @@ day = int(input4)
 
 
 
-print(input1 + ", you are a")
+
