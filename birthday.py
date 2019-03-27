@@ -68,7 +68,7 @@ else:
     else:
         season = "idk"
         
-    print(name + ", you are a " + season + " baby of the " + era)
+    print(name + ", you are a " + season + " baby of the " + era + ".")
 
 
 
