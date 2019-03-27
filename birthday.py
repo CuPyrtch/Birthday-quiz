@@ -1,8 +1,8 @@
 """
 birthday.py
-Author: <your name here>
-Credit: <list sources used, if any>
-Assignment:
+Author: CuPyrtch
+Credit: None
+Assignment: Birthday-quiz
 
 Your program will ask the user the following questions, in this order:
 
