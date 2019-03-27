@@ -37,10 +37,10 @@ todaymonth = datetime.today().month
 todayday = datetime.today().day
 todaymonthname = month_name[todaymonth].lower()
 
-name = input("Hello, what is your name? ")
-month = input("Hello " + name + ", what was the name of the month you were born in? ").lower()
-year = input("And what year were you born in, " + name + "? ")
-daystr = input("And the day? ")
+name = input("Hello, what is your name?")
+month = input("Hello " + name + ", what was the name of the month you were born in?").lower()
+year = input("And what year were you born in, " + name + "?")
+daystr = input("And the day?")
 day = int(daystr)
 
 if month == "october" and day == 31:
