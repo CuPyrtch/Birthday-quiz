@@ -34,20 +34,41 @@ Example Session
 from datetime import datetime
 from calendar import month_name
 todaymonth = datetime.today().month
-todaydate = datetime.today().day
+todayday = datetime.today().day
+todaymonthname = month_name[todaymonth].lower()
 
+name = input("Hello, what is your name? ")
+month = input("Hello " + name + ", what was the name of the month you were born in? ").lower()
+year = input("And what year were you born in, " + name + "? ")
+daystr = input("And the day? ")
+day = int(daystr)
 
-
-input1 = input("Hello, what is your name? ")
-input2 = input("Hello " + input1 + ", what was the name of the month you were born in? ")
-input3 = input("And what year were you born in, " + input1 + "? ")
-input4 = input("And the day? ")
-
-if int(input3) > 2000:
-    print(input1 + ", you are a" + " of the two thousands")
-
-year = int(input3)
-day = int(input4)
+if month == "october" and day == 31:
+    print("You were born on Halloween!")
+elif month == todaymonthname and day == todayday:
+    print("Happy birthday!")
+else:
+    if int(year) >= 2000:
+        era = "two thousands"
+    elif int(year) >= 1990:
+        era = "nineties"
+    elif int(year) >= 1980:
+        era = "eighties"
+    elif int(year) < 1980:
+        era = "Stone Age"
+    
+    if month in ["december","january","february"]:
+        season = "winter"
+    elif month in ["march","april","may"]:
+        season = "spring"
+    elif month in ["june","july","august"]:
+        season = "summer"
+    elif month in ["september","october","november"]:
+        season = "fall"
+    else:
+        season = "idk"
+        
+    print(name + ", you are a " + season + " baby of the " + era)
 
 
 
